@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.pharmwebspring.DAO.PharmacyDAO">
+    <select id="getPharmacy" resultType="com.example.pharmwebspring.Model.Pharmacy">
+        select * from pharmacy
+    </select>
+
+    <insert id="setPharmacy" parameterType="com.example.pharmwebspring.Model.Pharmacy">
+        INSERT INTO parmdb.pharmacy VALUE (#{pharm_id}, #{pharm_pw}, #{opentime}, #{closetime}, #{pharm_name}, #{pharm_adr}, #{regi_no})
+    </insert>
+</mapper>
