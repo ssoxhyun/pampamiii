@@ -12,8 +12,8 @@ public class Order {
     private String order_phone;
     private String order_adr;
 
-    private String user_id_fk;
-    private String prod_name_fk;
+    private String user_id;
+    private String prod_name;
     private String pharm_name;
     //private int count; -> 조인 (cart)
 }

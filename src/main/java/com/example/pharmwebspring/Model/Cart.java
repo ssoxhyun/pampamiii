@@ -6,6 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 
+//큐
+//어노테이션 Foreign key?
+
 public class Cart {
     private int count;
 

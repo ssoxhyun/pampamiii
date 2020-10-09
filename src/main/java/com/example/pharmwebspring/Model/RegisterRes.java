@@ -5,6 +5,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Res_Reg {
+public class RegisterRes {
     private int status;
 }

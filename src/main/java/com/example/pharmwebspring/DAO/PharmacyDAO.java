@@ -1,5 +1,6 @@
 package com.example.pharmwebspring.DAO;
 
+import com.example.pharmwebspring.Model.Login;
 import com.example.pharmwebspring.Model.Pharmacy;
 import com.example.pharmwebspring.Model.User;
 import org.apache.ibatis.annotations.Mapper;
@@ -10,8 +11,10 @@ import java.util.List;
 @Component
 @Mapper
 public interface PharmacyDAO {
-    List<Pharmacy> getPharmacy();
-    void setPharmacy(Pharmacy pharmacy);
 
-    void setCustomer(User user);
+    void setPharmacy(Pharmacy pharmacy);
+    Pharmacy getPharmacy(Login login);
+
+    void setUser(User user);
+    User getUser(Login login);
 }
