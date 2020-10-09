@@ -13,7 +13,7 @@ public class Order {
     private String order_adr;
 
     private String user_id_fk;
-    //private String pharm_name_fk;
-    private int prod_no_fk;
     private String prod_name_fk;
+    private String pharm_name;
+    //private int count; -> 조인 (cart)
 }

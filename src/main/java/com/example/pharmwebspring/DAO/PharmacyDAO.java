@@ -1,6 +1,7 @@
 package com.example.pharmwebspring.DAO;
 
 import com.example.pharmwebspring.Model.Pharmacy;
+import com.example.pharmwebspring.Model.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -11,4 +12,6 @@ import java.util.List;
 public interface PharmacyDAO {
     List<Pharmacy> getPharmacy();
     void setPharmacy(Pharmacy pharmacy);
+
+    void setCustomer(User user);
 }

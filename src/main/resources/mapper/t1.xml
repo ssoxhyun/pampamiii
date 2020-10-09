@@ -10,4 +10,8 @@
     <insert id="setPharmacy" parameterType="com.example.pharmwebspring.Model.Pharmacy">
         INSERT INTO parmdb.pharmacy VALUE (#{pharm_id}, #{pharm_pw}, #{opentime}, #{closetime}, #{pharm_name}, #{pharm_adr}, #{regi_no})
     </insert>
+
+    <insert id="setCustomer" parameterType="com.example.pharmwebspring.Model.User">
+        INSERT INTO parmdb.user VALUE (#{user_id}, #{user_pw}, #{user_name}, #{phone}, #{user_adr}, #{mail})
+    </insert>
 </mapper>
