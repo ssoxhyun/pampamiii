@@ -10,7 +10,7 @@ public class User {
     private String user_id;
     private String user_pw;
     private String user_name;
-    private String phone;
+    private String user_phone;
     private String user_adr;
-    private String mail;
+    private String user_email;
 }

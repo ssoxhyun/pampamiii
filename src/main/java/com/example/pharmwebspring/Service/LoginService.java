@@ -6,10 +6,10 @@ import com.example.pharmwebspring.Model.User;
 
 import java.util.List;
 
-public interface PharmacyService {
+public interface LoginService {
     void insertPharmacy(Pharmacy pharmacy);
     void insertUser(User user);
 
-    User getUser(Login login);
     Pharmacy getPharmacy(Login login);
+    User getUser(Login login);
 }
