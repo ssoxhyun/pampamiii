@@ -59,7 +59,7 @@ public class APIController {
     public RegisterRes LoginUser(@RequestBody Login login){
 
         RegisterRes registerRes = new RegisterRes();
-        User user = loginService.getUser(login);
+        User user = loginService.checkUser(login);
 
         if(user==null){
 
@@ -76,7 +76,7 @@ public class APIController {
     public RegisterRes LoginPharmacy(@RequestBody Login login){
 
         RegisterRes registerRes = new RegisterRes();
-        Pharmacy pharmacy = loginService.getPharmacy(login);
+        Pharmacy pharmacy = loginService.checkPharmacy(login);
 
         if(pharmacy==null){
 

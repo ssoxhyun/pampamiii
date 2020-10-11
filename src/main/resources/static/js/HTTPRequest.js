@@ -9,7 +9,7 @@ $("#userLoginBtn").on('click',()=>{ //.on 이벤트 트리거
         dataType: "json", //fix
         contentType: "application/json; charset=utf-8;", //fix
         url: "/api/uidlogin",
-        data: JSON.stringify(data), //fix ; 객체->트링
+        data: JSON.stringify(data), //fix ; 객체->스트링
     }).done(function(data) {
         //로직 필요에 따라 변경
         if(data.status==200){

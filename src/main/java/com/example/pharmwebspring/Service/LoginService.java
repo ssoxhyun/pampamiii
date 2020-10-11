@@ -7,9 +7,10 @@ import com.example.pharmwebspring.Model.User;
 import java.util.List;
 
 public interface LoginService {
-    void insertPharmacy(Pharmacy pharmacy);
     void insertUser(User user);
+    void insertPharmacy(Pharmacy pharmacy);
 
-    Pharmacy getPharmacy(Login login);
-    User getUser(Login login);
+    User checkUser(Login login);
+    Pharmacy checkPharmacy(Login login);
+
 }

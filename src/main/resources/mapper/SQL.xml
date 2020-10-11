@@ -8,15 +8,15 @@
         INSERT INTO parmdb.pharmacy VALUE (#{pharm_id}, #{pharm_pw}, #{opentime}, #{closetime}, #{pharm_name}, #{pharm_adr}, #{regi_no})
     </insert>
 
-    <select id="getPharmacy" parameterType="com.example.pharmwebspring.Model.Login" resultType="com.example.pharmwebspring.Model.Pharmacy">
-        select * from pharmacy where pharm_id=#{pharm_id} and pharm_pw=#{pharm_pw}
+    <select id="getPharmacy" parameterType="com.example.pharmwebspring.Model.Login"  resultType="com.example.pharmwebspring.Model.Pharmacy">
+        select * from parmdb.pharmacy where pharm_id=#{login_id} and pharm_pw=#{login_pw}
     </select>
 
     <insert id="setUser" parameterType="com.example.pharmwebspring.Model.User">
         INSERT INTO parmdb.user VALUE (#{user_id}, #{user_pw}, #{user_name}, #{user_phone}, #{user_adr}, #{user_email})
     </insert>
     <select id="getUser" parameterType="com.example.pharmwebspring.Model.Login" resultType="com.example.pharmwebspring.Model.User">
-        select * from parmdb.user where user_id=#{user_id} and user_pw=#{user_pw}
+        select * from parmdb.user where user_id=#{login_id} and user_pw=#{login_pw}
     </select>
 
 </mapper>
